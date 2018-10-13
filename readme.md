@@ -3,7 +3,7 @@
 
 # In brevi
 
-The purpose of this repository is to estimate quantiles using various methods. This arose while comparing results from numpy with Minitab statistical software, which led to questions of why the difference. This is important to me because the differences in Q1 and Q3 lead to practically significant differences in estimates of the confidence intervals of Q2.
+The purpose of this repository is to illustrate the many methods to estimate sample quantiles. This arose while comparing results from numpy with Minitab statistical software, which led to questions of why the difference. This is important to me because the differences in Q1 and Q3 lead to practically significant differences in estimates of the confidence intervals of Q2.
 
 I use functions from numpy and scipy to estimate quantiles. I might have to code my own functions for the other methods for which functions do not exist.
 
