@@ -1,5 +1,7 @@
+<!--
 [![Coverity Scan Build Status](https://img.shields.io/coverity/scan/10257.svg)](https://scan.coverity.com/projects/gillespilon-estimating_sample_quantiles)
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/gillespilon/estimating_sample_quantiles)
+-->
 
 # In brevi
 
