@@ -1,31 +1,26 @@
-[![Coverity Scan Build Status](https://img.shields.io/coverity/scan/10257.svg)](https://scan.coverity.com/projects/pilona-rpn)
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/pilona/RPN)
+[![Coverity Scan Build Status](https://img.shields.io/coverity/scan/10257.svg)](https://scan.coverity.com/projects/gillespilon-estimating_sample_quantiles)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/gillespilon/estimating_sample_quantiles)
 
 # In brevi
 
-This repository contains two notebooks: one performs a one-factor analysis of variance (ANOVA) and the other estimates quartiles using the nine known methods found in the literature. The latter notebook arose while comparing results of the first notebook with Minitab statistical software, which led to questions of why the difference.
+The purpose of this repository is to estimate quantiles using various methods. This arose while comparing results from numpy with Minitab statistical software, which led to questions of why the difference. This is important to me because the differences in Q1 and Q3 lead to practically significant differences in estimates of the confidence intervals of Q2.
 
-This repository is incomplete. Future work is ongoing.
+I use functions from numpy and scipy to estimate quantiles. I might have to code my own functions for the other methods for which functions do not exist.
 
 # Methodology
 
-Various data munging operations are performed using pandas. Various statistical analyses are performed using statsmodels, scipy, and numpy.
 
 # Data
 
 Download the  file:
 
-- [estimating_quartiles.csv](https://drive.google.com/open?id=1Nc_VFXo2SrsSdprfCmQYhLbJawAzKpH6)
+[estimating_quartiles.csv](https://drive.google.com/open?id=1Nc_VFXo2SrsSdprfCmQYhLbJawAzKpH6)
 
 # References
 
-[pandas](https://pandas.pydata.org/pandas-docs/stable/index.html)
+[numpy.quantile](https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.quantile.html?highlight=quantile)
 
-[statsmodels](https://www.statsmodels.org/stable/index.html)
-
-[scipy](https://docs.scipy.org/doc/scipy/reference/)
-
-[numpy](https://docs.scipy.org/doc/numpy/reference/)
+[scipy.stats.mstats.mquantiles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html)
 
 # License
 
