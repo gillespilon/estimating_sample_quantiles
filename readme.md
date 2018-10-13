@@ -11,6 +11,7 @@ I use functions from numpy and scipy to estimate quantiles. I might have to code
 
 # Methodology
 
+The various algorithms for estimating quantiles are described in the notebook as well as the documentation within the numpy and scipy functions.
 
 # Data
 
