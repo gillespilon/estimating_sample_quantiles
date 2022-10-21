@@ -1,65 +1,64 @@
-#!/usr/bin/env python3
-
-'''
+#! /usr/bin/env python3
+"""
 Estimating sample quantiles
-'''
+"""
 
-# time -f '%e' ./estimating_sample_quantiles.py > estimating_sample_quantiles.txt
-# ./estimating_sample_quantiles.py > estimating_sample_quantiles.txt
-
-
-import pandas as pd
 import scipy.stats.mstats as ms
-from scipy.stats import anderson
-import scipy.stats as sm
-import statsmodels.stats.diagnostic as smd
-import numpy as np
-
 import datasense as ds
-
-# y is the column of response values.
-df = pd.read_csv('estimating_sample_quantiles.csv')
-
-# Calculate basic statistics.
-df.describe()
+import pandas as pd
 
 
-resultd = ms.mquantiles(df['y'], prob=(0.25, 0.50, 0.75), alphap=0.33, betap=0.33)
-resultd
+def main():
+    data = {"y": [0, 0, 1, 2, 63, 61, 27, 13]}
+    df = pd.DataFrame(data=data)
+    series_name_y = "y"
+    print("pandas.Series.describe():")
+    print()
+    print(df[series_name_y].describe())
+    print()
+    method06 = ms.mquantiles(
+        df[series_name_y],
+        prob=(0.25, 0.50, 0.75),
+        alphap=0,
+        betap=0
+    )
+    print("R method 6, SPSS, Minitab:")
+    print(method06)
+    print()
+    method07 = ms.mquantiles(
+        df[series_name_y],
+        prob=(0.25, 0.50, 0.75),
+        alphap=1,
+        betap=1
+    )
+    print(
+        "R method 7 default, Splus 3.1, pandas default, NumPy default linear:"
+    )
+    print(method07)
+    print()
+    method08 = ms.mquantiles(
+        df[series_name_y],
+        prob=(0.25, 0.50, 0.75),
+        alphap=1/3,
+        betap=1/3
+    )
+    print("R method 8, NumPy median_unbiased, datasense:")
+    print(method08)
+    print()
+    method10 = ms.mquantiles(
+        df[series_name_y],
+        prob=(0.25, 0.50, 0.75),
+        alphap=.4,
+        betap=.4
+    )
+    print("Cunane's method, SciPy default")
+    print(method10)
+    print()
+    print("ds.nonparametric_summary()")
+    series = ds.nonparametric_summary(series=df[series_name_y])
+    print(series)
+    print()
 
 
-resultd[0]
-
-
-resultminitab = ms.mquantiles(df['y'], prob=(0.25, 0.50, 0.75), alphap=0, betap=0)
-resultminitab
-
-
-ds.nonparametric_summary(df['y']) # alphap=0.33 betap=0.33 by default
-ds.nonparametric_summary(df['y'], alphap=0, betap=0) # Minitab
-df.min()
-df.max()
-df.mean()
-df.std()
-df.var()
-df.skew()
-df.kurt()
-df.count()
-
-
-adresult = anderson(df['y'], dist='norm')
-adresult.statistic
-
-
-smd.normal_ad(df['y'])
-
-
-sm.norm.interval(0.95,
-                 loc=np.mean(df['y']),
-                 scale=sm.sem(df['y']))
-
-
-sm.t.interval(0.95,
-              len(df['y']-1),
-              loc=np.mean(df['y']),
-              scale=sm.sem(df['y']))
+if __name__ == "__main__":
+    main()
