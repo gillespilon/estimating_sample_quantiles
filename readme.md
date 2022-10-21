@@ -175,6 +175,6 @@ McGill, Robert, John W. Tukey, and Wayne A. Larsen. 1978. "Variations of Box Plo
 
 [SciPy documentation on mquantiles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html).
 
-[SciPy documentation on masked arrays](https://docs.scipy.org/doc/numpy-1.15.1/reference/maskedarray.html).
+[SciPy documentation on masked arrays](https://numpy.org/doc/stable/reference/maskedarray.html).
 
 Wikipedia. "Quantile". Last modified 2018-08-01. [https://en.wikipedia.org/wiki/Quantile](https://en.wikipedia.org/wiki/Quantile).
