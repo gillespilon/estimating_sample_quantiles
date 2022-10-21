@@ -62,11 +62,11 @@ $$
 p(k) = \frac{k - \text{alphap}}{n + 1 - \text{alphap} - \text{betap}}
 \end{equation}$$
 
-In the script I am particularly interested in the 4-quantiles, called the 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> quartiles (Q1, Q2. Q3).# References
+In the script I am particularly interested in the 4-quantiles, called the 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> quartiles (Q1, Q2. Q3).
 
 The following table is a work in progress, to combine the eleven methods into one table.
 
-<table>
+<table style="font-size: 10px; important;">
 <tr>
 <th style="text-align:center">Method</th>
 <th style="text-align:center">Software</th>
