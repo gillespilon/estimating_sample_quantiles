@@ -27,11 +27,11 @@ where:
 
 $$
 \begin{equation}
-& x_j \text{ is the } j^{th} \text{ order statistic}&& \\
-& \gamma \text{ is a function of } j = \lfloor \text{(n} \times \text{p + m)} \rfloor&& \\
-& m = \text{alphap + p } \times \text{(1} - \text{alphap} - \text{betap)}&& \\
-& g = \text{n} \times \text{p} + \text{m} - \text{j}&& \\
-& \frac{j - m}{n} \leq p \lt \frac{j - m + 1}{n}&&
+x_j \text{ is the } j^{th} \text{ order statistic}\\
+\gamma \text{ is a function of } j = \lfloor \text{(n} \times \text{p + m)} \rfloor\\
+m = \text{alphap + p } \times \text{(1} - \text{alphap} - \text{betap)}\\
+g = \text{n} \times \text{p} + \text{m} - \text{j}\\
+\frac{j - m}{n} \leq p \lt \frac{j - m + 1}{n}\\
 \end{equation}
 $$
 
