@@ -105,7 +105,7 @@ The following table is a work in progress, to combine the eleven methods into on
 <td>$(N + 1)p$</td>
 <td>$x_{\lfloor \text{h}\rfloor} + (h - \lfloor \text{h} \rfloor) (x_{\lfloor \text{h} \rfloor + 1} - x_{\lfloor \text{h} \rfloor})$</td>
 <td>(0,0)</td>
-<td>$\frac{k}{n +1}$ Linear interpolation of the expectations for the order statistics for the uniform distribution on [0,1]. That is, it is the linear interpolation between points ($p_h, x_h$), where $p_h = \frac{h}{N+ 1}$ is the probability that the last of $(N + 1)$ randomly drawn values will not exceed the $h^\text{th}$ smallest of the first $N$ randomly drawn values. When $p \lt \frac{1}{N + 1}$, use $x_1$. When $p \geq \frac{N}{N + 1}$, use $x_N$.</td>
+<td>$\frac{k}{n +1}$ Linear interpolation of the expectations for the order statistics for the uniform distribution on [0,1]. That is, it is the linear interpolation between points $p_h$ and $x_h$, where $p_h = \frac{h}{N+ 1}$ is the probability that the last of $(N + 1)$ randomly drawn values will not exceed the $h^\text{th}$ smallest of the first $N$ randomly drawn values. When $p \lt \frac{1}{N + 1}$, use $x_1$. When $p \geq \frac{N}{N + 1}$, use $x_N$.</td>
 </tr>
 <tr>
 <td style="text-align:center">7</td>
@@ -128,7 +128,7 @@ The following table is a work in progress, to combine the eleven methods into on
 <td>R-9</td>
 <td>$(N + \frac{1}{4})p + \frac{3}{8}$</td>
 <td>$x_{\lfloor \text{h}\rfloor} + (h - \lfloor \text{h} \rfloor) (x_{\lfloor \text{h} \rfloor + 1} - x_{\lfloor \text{h} \rfloor})$</td>
-<td>($\frac{3}{8},\frac{3}{8}$)</td>
+<td>$(\frac{3}{8},\frac{3}{8})$</td>
 <td>$p(k) = \frac{k - \frac{3}{8}}{n + \frac{1}{4}}$ Blom. The resulting quantile estimates are approximately unbiased for the expected order statistics if $x$ is normally distributed. When $p \lt \frac{\frac{5}{8}}{N + \frac{1}{4}}$, use $x_1$. When $p \geq \frac{N - \frac{3}{8}}{N + \frac{1}{4}}$, use $x_N$.</td>
 </tr>
 <tr>
