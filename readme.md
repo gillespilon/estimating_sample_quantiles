@@ -9,10 +9,6 @@ The purpose of this repository is to illustrate the many methods to estimate sam
 
 I use functions from NumPy and SciPy to estimate quantiles. I might have to code my own functions for the other methods for which functions do not exist.
 
-# Methodology
-
-The various algorithms for estimating quantiles are described in the notebook as well as the documentation within the NumPy and SciPy functions.
-
 # Explanation of the eleven methods
 
 Quantiles divide the range of a probability distribution into continuous intervals with equal probabilities, or divide the observations in a sample in the same way [Wikipedia](https://en.wikipedia.org/wiki/Quantile). A sample drawn from an unknown population requires estimating the quantiles. There are twelve known methods that commonly appear in statistical packages. Methods 1-3 are based on rounding. Methods 4-9 are based on linear interpolation.
@@ -46,7 +42,7 @@ $$
 p(k) = \frac{k - \text{alphap}}{n + 1 - \text{alphap} - \text{betap}}
 \end{equation}$$
 
-In this notebook I am particularly interested in the 4-quantiles, called the 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> quartiles (Q1, Q2. Q3).# References
+In the script I am particularly interested in the 4-quantiles, called the 1<sup>st</sup>, 2<sup>nd</sup> and 3<sup>rd</sup> quartiles (Q1, Q2. Q3).# References
 
 The following table is a work in progress, to combine the eleven methods into one table.
 
@@ -155,8 +151,30 @@ The following table is a work in progress, to combine the eleven methods into on
 <td>(0.35,0.35)</td>
 <td>APL, used with PWM.</td>
 </tr>
-</table>[numpy.quantile](https://docs.scipy.org/doc/numpy-1.15.1/reference/generated/numpy.quantile.html?highlight=quantile)
+</table>
 
 # Software
 
 As shown above, R (version 2.0.0 onwards) implements methods 1-9. SciPy implements methods 4-9, 10, and a method called APL (need info on this).[scipy.stats.mstats.mquantiles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html)
+
+# References
+
+[datasense module](https://github.com/gillespilon/datasense).
+
+[Five-number summary](https://en.wikipedia.org/wiki/Five-number_summary).
+
+Hyndman, Rob J. and Yanan Fan. "Sample Quantiles in Statistical Packages." *The American Statistician* Vol. 50, No. 4 (Nov. 1996): 361-365. [JSTOR 2684934](http://www.jstor.org/stable/2684934).
+
+McGill, Robert, John W. Tukey, and Wayne A. Larsen. 1978. "Variations of Box Plots." *The American Statistician 21 (February 1978), no. 1; 12-16. [https://www.jstor.org/stable/2683468](https://www.jstor.org/stable/2683468).
+
+[pandas](https://pandas.pydata.org/pandas-docs/stable/api.html).
+
+[R documentation on quantiles](https://www.rdocumentation.org/packages/stats/topics/quantile).
+
+[R quantile function](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/quantile.html).
+
+[SciPy documentation on mquantiles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.mquantiles.html).
+
+[SciPy documentation on masked arrays](https://docs.scipy.org/doc/numpy-1.15.1/reference/maskedarray.html).
+
+Wikipedia. "Quantile". Last modified 2018-08-01. [https://en.wikipedia.org/wiki/Quantile](https://en.wikipedia.org/wiki/Quantile).
