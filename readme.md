@@ -29,15 +29,23 @@ $$
 \begin{equation}
 x_j \text{ is the } j^{th} \text{ order statistic}\\
 \end{equation}
+$$
+$$
 \begin{equation}
 \gamma \text{ is a function of } j = \lfloor \text{(n} \times \text{p + m)} \rfloor\\
 \end{equation}
+$$
+$$
 \begin{equation}
 m = \text{alphap + p } \times \text{(1} - \text{alphap} - \text{betap)}\\
 \end{equation}
+$$
+$$
 \begin{equation}
 g = \text{n} \times \text{p} + \text{m} - \text{j}\\
 \end{equation}
+$$
+$$
 \begin{equation}
 \frac{j - m}{n} \leq p \lt \frac{j - m + 1}{n}\\
 \end{equation}
