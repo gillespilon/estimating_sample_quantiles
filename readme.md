@@ -66,8 +66,8 @@ In the script I am particularly interested in the 4-quantiles, called the 1<sup>
 
 The following table is a work in progress, to combine the eleven methods into one table.
 
-<table>
-<tbody style="font-size: 8px";>
+<style>.mytable td{font-size:8px;}</style>>
+<table class="mytable">
 <tr>
 <th style="text-align:center">Method</th>
 <th style="text-align:center">Software</th>
@@ -172,7 +172,6 @@ The following table is a work in progress, to combine the eleven methods into on
 <td>(0.35,0.35)</td>
 <td>APL, used with PWM.</td>
 </tr>
-</tbody>
 </table>
 
 # Software
